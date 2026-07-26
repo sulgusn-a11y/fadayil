@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;900&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lateef&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Tajawal", "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Tajawal", "Cairo", sans-serif;
+  --font-amiri: "Amiri", serif;
+  --font-lateef: "Lateef", serif;
+  --font-mohanad: "Al-Mohanad", "Tajawal", sans-serif;
+  
+  --color-[#F4F9F6]: #F8FAFC;
+}
+
+@font-face {
+  font-family: 'Al-Mohanad';
+  src: url('https://raw.githubusercontent.com/somoq123-collab/fadayil/main/Al-Mohanad%20Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-tajawal { font-family: "Tajawal", "Cairo", sans-serif; }
+.font-cairo { font-family: "Cairo", "Tajawal", sans-serif; }
+.font-amiri { font-family: "Amiri", serif; }
+.font-lateef { font-family: "Lateef", serif; }
+.font-mohanad { font-family: "Al-Mohanad", "Tajawal", sans-serif; }
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F8FAFC;
+  color: #0f172a;
+  direction: rtl;
+}
+
+/* Custom scrollbar for beautiful UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Beautiful dashed pulse animation for central circle */
+@keyframes dash-pulse {
+  0% {
+    stroke-dashoffset: 0;
+    transform: scale(1);
+  }
+  50% {
+    stroke-dashoffset: 12;
+    transform: scale(1.02);
+  }
+  100% {
+    stroke-dashoffset: 24;
+    transform: scale(1);
+  }
+}
+
+.dashed-circle {
+  animation: dash-pulse 20s linear infinite;
+  transform-origin: center;
+}
+

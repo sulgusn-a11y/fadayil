@@ -1,0 +1,8 @@
+{
+  "name": "فضائل",
+  "description": "تطبيق تفاعلي لاستعراض وتصنيف الفضائل والأقسام الشرعية والعبادات وتفريعاتها مع إمكانية التعديل والإضافة والحذف بصورة شبابية وجذابة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
